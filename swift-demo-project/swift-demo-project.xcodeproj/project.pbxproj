@@ -19,6 +19,7 @@
 		318CBB7423686A9C006D7469 /* x86_64.swiftdoc in Resources */ = {isa = PBXBuildFile; fileRef = 318CBB6F23686A9C006D7469 /* x86_64.swiftdoc */; };
 		318CBB7523686A9C006D7469 /* x86_64.swiftmodule in Resources */ = {isa = PBXBuildFile; fileRef = 318CBB7023686A9C006D7469 /* x86_64.swiftmodule */; };
 		842B53AB2368A32D003949DC /* Placeholder.m in Sources */ = {isa = PBXBuildFile; fileRef = 842B53AA2368A32D003949DC /* Placeholder.m */; };
+		842B53C12368A49E003949DC /* liboc-static-lib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 842B53C02368A49E003949DC /* liboc-static-lib.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +38,9 @@
 		318CBB7023686A9C006D7469 /* x86_64.swiftmodule */ = {isa = PBXFileReference; lastKnownFileType = file; path = x86_64.swiftmodule; sourceTree = "<group>"; };
 		842B53A92368A32D003949DC /* swift-demo-project-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "swift-demo-project-Bridging-Header.h"; sourceTree = "<group>"; };
 		842B53AA2368A32D003949DC /* Placeholder.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Placeholder.m; sourceTree = "<group>"; };
+		842B53BE2368A49E003949DC /* NSObject+OC_Static_Lib.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+OC_Static_Lib.h"; sourceTree = "<group>"; };
+		842B53BF2368A49E003949DC /* oc_static_lib.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = oc_static_lib.h; sourceTree = "<group>"; };
+		842B53C02368A49E003949DC /* liboc-static-lib.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "liboc-static-lib.a"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,6 +49,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				318CBB7123686A9C006D7469 /* libswift-static-lib.a in Frameworks */,
+				842B53C12368A49E003949DC /* liboc-static-lib.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,6 +75,7 @@
 		318CBB55236869D5006D7469 /* swift-demo-project */ = {
 			isa = PBXGroup;
 			children = (
+				842B53BB2368A49E003949DC /* liboc-static-lib */,
 				318CBB6A23686A9C006D7469 /* libswift-static-lib */,
 				318CBB56236869D5006D7469 /* AppDelegate.swift */,
 				318CBB58236869D5006D7469 /* SceneDelegate.swift */,
@@ -102,6 +108,32 @@
 				318CBB7023686A9C006D7469 /* x86_64.swiftmodule */,
 			);
 			path = swift_static_lib.swiftmodule;
+			sourceTree = "<group>";
+		};
+		842B53BB2368A49E003949DC /* liboc-static-lib */ = {
+			isa = PBXGroup;
+			children = (
+				842B53BC2368A49E003949DC /* include */,
+				842B53C02368A49E003949DC /* liboc-static-lib.a */,
+			);
+			path = "liboc-static-lib";
+			sourceTree = "<group>";
+		};
+		842B53BC2368A49E003949DC /* include */ = {
+			isa = PBXGroup;
+			children = (
+				842B53BD2368A49E003949DC /* oc-static-lib */,
+			);
+			path = include;
+			sourceTree = "<group>";
+		};
+		842B53BD2368A49E003949DC /* oc-static-lib */ = {
+			isa = PBXGroup;
+			children = (
+				842B53BE2368A49E003949DC /* NSObject+OC_Static_Lib.h */,
+				842B53BF2368A49E003949DC /* oc_static_lib.h */,
+			);
+			path = "oc-static-lib";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -338,6 +370,7 @@
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/swift-demo-project/libswift-static-lib",
+					"$(PROJECT_DIR)/swift-demo-project/liboc-static-lib",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "me.kingcos.swift-demo-project";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -364,6 +397,7 @@
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/swift-demo-project/libswift-static-lib",
+					"$(PROJECT_DIR)/swift-demo-project/liboc-static-lib",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "me.kingcos.swift-demo-project";
 				PRODUCT_NAME = "$(TARGET_NAME)";

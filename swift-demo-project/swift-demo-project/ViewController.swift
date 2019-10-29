@@ -10,14 +10,12 @@ import UIKit
 import swift_static_lib
 
 class ViewController: UIViewController {
-
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         
         swift_static_lib().foo()
+        oc_static_lib().foo()
     }
-
-
 }
 
