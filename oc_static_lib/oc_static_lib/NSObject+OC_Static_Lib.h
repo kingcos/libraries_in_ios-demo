@@ -1,5 +1,5 @@
 //
-//  oc_static_lib.h
+//  NSObject+OC_Static_Lib.h
 //  oc_static_lib
 //
 //  Created by kingcos on 2019/10/29.
@@ -8,6 +8,10 @@
 
 #import <Foundation/Foundation.h>
 
-@interface oc_static_lib : NSObject
+NS_ASSUME_NONNULL_BEGIN
+
+@interface NSObject (OC_Static_Lib)
 - (void)foo;
 @end
+
+NS_ASSUME_NONNULL_END

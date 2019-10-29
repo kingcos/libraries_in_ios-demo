@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		318CBAB3236859B5006D7469 /* oc_static_lib.m in Sources */ = {isa = PBXBuildFile; fileRef = 318CBAB2236859B5006D7469 /* oc_static_lib.m */; };
 		318CBAB4236859B5006D7469 /* oc_static_lib.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 318CBAB1236859B5006D7469 /* oc_static_lib.h */; };
+		318CBABC23685C31006D7469 /* NSObject+OC_Static_Lib.m in Sources */ = {isa = PBXBuildFile; fileRef = 318CBABB23685C31006D7469 /* NSObject+OC_Static_Lib.m */; };
+		318CBABD23685CBA006D7469 /* NSObject+OC_Static_Lib.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 318CBABA23685C31006D7469 /* NSObject+OC_Static_Lib.h */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -19,6 +21,7 @@
 			dstSubfolderSpec = 16;
 			files = (
 				318CBAB4236859B5006D7469 /* oc_static_lib.h in CopyFiles */,
+				318CBABD23685CBA006D7469 /* NSObject+OC_Static_Lib.h in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -28,6 +31,11 @@
 		318CBAAE236859B5006D7469 /* liboc_static_lib.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = liboc_static_lib.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		318CBAB1236859B5006D7469 /* oc_static_lib.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = oc_static_lib.h; sourceTree = "<group>"; };
 		318CBAB2236859B5006D7469 /* oc_static_lib.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = oc_static_lib.m; sourceTree = "<group>"; };
+		318CBABA23685C31006D7469 /* NSObject+OC_Static_Lib.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+OC_Static_Lib.h"; sourceTree = "<group>"; };
+		318CBABB23685C31006D7469 /* NSObject+OC_Static_Lib.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+OC_Static_Lib.m"; sourceTree = "<group>"; };
+		318CBAC923685D3D006D7469 /* NSObject+OC_Static_Lib.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+OC_Static_Lib.h"; sourceTree = "<group>"; };
+		318CBACA23685D3D006D7469 /* oc_static_lib.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = oc_static_lib.h; sourceTree = "<group>"; };
+		318CBACB23685D3D006D7469 /* liboc_static_lib.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = liboc_static_lib.a; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,8 +68,45 @@
 		318CBAB0236859B5006D7469 /* oc_static_lib */ = {
 			isa = PBXGroup;
 			children = (
+				318CBAC523685D3D006D7469 /* Products */,
 				318CBAB1236859B5006D7469 /* oc_static_lib.h */,
 				318CBAB2236859B5006D7469 /* oc_static_lib.m */,
+				318CBABA23685C31006D7469 /* NSObject+OC_Static_Lib.h */,
+				318CBABB23685C31006D7469 /* NSObject+OC_Static_Lib.m */,
+			);
+			path = oc_static_lib;
+			sourceTree = "<group>";
+		};
+		318CBAC523685D3D006D7469 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				318CBAC623685D3D006D7469 /* Debug-iphonesimulator */,
+			);
+			path = Products;
+			sourceTree = SOURCE_ROOT;
+		};
+		318CBAC623685D3D006D7469 /* Debug-iphonesimulator */ = {
+			isa = PBXGroup;
+			children = (
+				318CBAC723685D3D006D7469 /* include */,
+				318CBACB23685D3D006D7469 /* liboc_static_lib.a */,
+			);
+			path = "Debug-iphonesimulator";
+			sourceTree = "<group>";
+		};
+		318CBAC723685D3D006D7469 /* include */ = {
+			isa = PBXGroup;
+			children = (
+				318CBAC823685D3D006D7469 /* oc_static_lib */,
+			);
+			path = include;
+			sourceTree = "<group>";
+		};
+		318CBAC823685D3D006D7469 /* oc_static_lib */ = {
+			isa = PBXGroup;
+			children = (
+				318CBAC923685D3D006D7469 /* NSObject+OC_Static_Lib.h */,
+				318CBACA23685D3D006D7469 /* oc_static_lib.h */,
 			);
 			path = oc_static_lib;
 			sourceTree = "<group>";
@@ -124,6 +169,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				318CBAB3236859B5006D7469 /* oc_static_lib.m in Sources */,
+				318CBABC23685C31006D7469 /* NSObject+OC_Static_Lib.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
