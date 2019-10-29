@@ -25,11 +25,12 @@
 /* Begin PBXFileReference section */
 		318CBB382368662C006D7469 /* libswift-static-lib.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libswift-static-lib.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		318CBB3B2368662C006D7469 /* swift_static_lib.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = swift_static_lib.swift; sourceTree = "<group>"; };
-		318CBB442368690F006D7469 /* libswift-static-lib.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libswift-static-lib.a"; sourceTree = "<group>"; };
-		318CBB462368690F006D7469 /* x86_64-apple-ios-simulator.swiftdoc */ = {isa = PBXFileReference; lastKnownFileType = file; path = "x86_64-apple-ios-simulator.swiftdoc"; sourceTree = "<group>"; };
-		318CBB472368690F006D7469 /* x86_64-apple-ios-simulator.swiftmodule */ = {isa = PBXFileReference; lastKnownFileType = file; path = "x86_64-apple-ios-simulator.swiftmodule"; sourceTree = "<group>"; };
-		318CBB482368690F006D7469 /* x86_64.swiftdoc */ = {isa = PBXFileReference; lastKnownFileType = file; path = x86_64.swiftdoc; sourceTree = "<group>"; };
-		318CBB492368690F006D7469 /* x86_64.swiftmodule */ = {isa = PBXFileReference; lastKnownFileType = file; path = x86_64.swiftmodule; sourceTree = "<group>"; };
+		318CBB7D23686DA4006D7469 /* libswift-static-lib.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libswift-static-lib.a"; sourceTree = "<group>"; };
+		318CBB8023686DA4006D7469 /* swift_static_lib-Swift.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "swift_static_lib-Swift.h"; sourceTree = "<group>"; };
+		318CBB8223686DA4006D7469 /* x86_64-apple-ios-simulator.swiftdoc */ = {isa = PBXFileReference; lastKnownFileType = file; path = "x86_64-apple-ios-simulator.swiftdoc"; sourceTree = "<group>"; };
+		318CBB8323686DA4006D7469 /* x86_64-apple-ios-simulator.swiftmodule */ = {isa = PBXFileReference; lastKnownFileType = file; path = "x86_64-apple-ios-simulator.swiftmodule"; sourceTree = "<group>"; };
+		318CBB8423686DA4006D7469 /* x86_64.swiftdoc */ = {isa = PBXFileReference; lastKnownFileType = file; path = x86_64.swiftdoc; sourceTree = "<group>"; };
+		318CBB8523686DA4006D7469 /* x86_64.swiftmodule */ = {isa = PBXFileReference; lastKnownFileType = file; path = x86_64.swiftmodule; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,36 +63,53 @@
 		318CBB3A2368662C006D7469 /* swift-static-lib */ = {
 			isa = PBXGroup;
 			children = (
-				318CBB422368690F006D7469 /* Products */,
+				318CBB7B23686DA4006D7469 /* Products */,
 				318CBB3B2368662C006D7469 /* swift_static_lib.swift */,
 			);
 			path = "swift-static-lib";
 			sourceTree = "<group>";
 		};
-		318CBB422368690F006D7469 /* Products */ = {
+		318CBB7B23686DA4006D7469 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				318CBB432368690F006D7469 /* Debug-iphonesimulator */,
+				318CBB7C23686DA4006D7469 /* Debug-iphonesimulator */,
 			);
 			path = Products;
 			sourceTree = SOURCE_ROOT;
 		};
-		318CBB432368690F006D7469 /* Debug-iphonesimulator */ = {
+		318CBB7C23686DA4006D7469 /* Debug-iphonesimulator */ = {
 			isa = PBXGroup;
 			children = (
-				318CBB442368690F006D7469 /* libswift-static-lib.a */,
-				318CBB452368690F006D7469 /* swift_static_lib.swiftmodule */,
+				318CBB7D23686DA4006D7469 /* libswift-static-lib.a */,
+				318CBB7E23686DA4006D7469 /* include */,
+				318CBB8123686DA4006D7469 /* swift_static_lib.swiftmodule */,
 			);
 			path = "Debug-iphonesimulator";
 			sourceTree = "<group>";
 		};
-		318CBB452368690F006D7469 /* swift_static_lib.swiftmodule */ = {
+		318CBB7E23686DA4006D7469 /* include */ = {
 			isa = PBXGroup;
 			children = (
-				318CBB462368690F006D7469 /* x86_64-apple-ios-simulator.swiftdoc */,
-				318CBB472368690F006D7469 /* x86_64-apple-ios-simulator.swiftmodule */,
-				318CBB482368690F006D7469 /* x86_64.swiftdoc */,
-				318CBB492368690F006D7469 /* x86_64.swiftmodule */,
+				318CBB7F23686DA4006D7469 /* swift_static_lib */,
+			);
+			path = include;
+			sourceTree = "<group>";
+		};
+		318CBB7F23686DA4006D7469 /* swift_static_lib */ = {
+			isa = PBXGroup;
+			children = (
+				318CBB8023686DA4006D7469 /* swift_static_lib-Swift.h */,
+			);
+			path = swift_static_lib;
+			sourceTree = "<group>";
+		};
+		318CBB8123686DA4006D7469 /* swift_static_lib.swiftmodule */ = {
+			isa = PBXGroup;
+			children = (
+				318CBB8223686DA4006D7469 /* x86_64-apple-ios-simulator.swiftdoc */,
+				318CBB8323686DA4006D7469 /* x86_64-apple-ios-simulator.swiftmodule */,
+				318CBB8423686DA4006D7469 /* x86_64.swiftdoc */,
+				318CBB8523686DA4006D7469 /* x86_64.swiftmodule */,
 			);
 			path = swift_static_lib.swiftmodule;
 			sourceTree = "<group>";
@@ -106,6 +124,7 @@
 				318CBB342368662C006D7469 /* Sources */,
 				318CBB352368662C006D7469 /* Frameworks */,
 				318CBB362368662C006D7469 /* CopyFiles */,
+				318CBB7A23686D3A006D7469 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -148,6 +167,26 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		318CBB7A23686D3A006D7469 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Powered by https://paul-samuels.com/blog/2018/01/14/swift-static-library-in-objective-c/\n\n# BUILT_PRODUCTS_DIR：构建产物目录；PRODUCT_MODULE_NAME：产物名称\ntarget_dir=${BUILT_PRODUCTS_DIR}/include/${PRODUCT_MODULE_NAME}/\n\n# Ensure the target include path exists\n# 递归创建文件夹\nmkdir -p ${target_dir}\n\n# Copy any file that looks like a Swift generated header to the include path\n# 复制到与 .a 同级目录\ncp ${DERIVED_SOURCES_DIR}/*-Swift.h ${target_dir}\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		318CBB342368662C006D7469 /* Sources */ = {
