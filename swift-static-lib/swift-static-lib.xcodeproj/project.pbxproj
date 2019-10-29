@@ -25,6 +25,11 @@
 /* Begin PBXFileReference section */
 		318CBB382368662C006D7469 /* libswift-static-lib.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libswift-static-lib.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		318CBB3B2368662C006D7469 /* swift_static_lib.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = swift_static_lib.swift; sourceTree = "<group>"; };
+		318CBB442368690F006D7469 /* libswift-static-lib.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libswift-static-lib.a"; sourceTree = "<group>"; };
+		318CBB462368690F006D7469 /* x86_64-apple-ios-simulator.swiftdoc */ = {isa = PBXFileReference; lastKnownFileType = file; path = "x86_64-apple-ios-simulator.swiftdoc"; sourceTree = "<group>"; };
+		318CBB472368690F006D7469 /* x86_64-apple-ios-simulator.swiftmodule */ = {isa = PBXFileReference; lastKnownFileType = file; path = "x86_64-apple-ios-simulator.swiftmodule"; sourceTree = "<group>"; };
+		318CBB482368690F006D7469 /* x86_64.swiftdoc */ = {isa = PBXFileReference; lastKnownFileType = file; path = x86_64.swiftdoc; sourceTree = "<group>"; };
+		318CBB492368690F006D7469 /* x86_64.swiftmodule */ = {isa = PBXFileReference; lastKnownFileType = file; path = x86_64.swiftmodule; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,9 +62,38 @@
 		318CBB3A2368662C006D7469 /* swift-static-lib */ = {
 			isa = PBXGroup;
 			children = (
+				318CBB422368690F006D7469 /* Products */,
 				318CBB3B2368662C006D7469 /* swift_static_lib.swift */,
 			);
 			path = "swift-static-lib";
+			sourceTree = "<group>";
+		};
+		318CBB422368690F006D7469 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				318CBB432368690F006D7469 /* Debug-iphonesimulator */,
+			);
+			path = Products;
+			sourceTree = SOURCE_ROOT;
+		};
+		318CBB432368690F006D7469 /* Debug-iphonesimulator */ = {
+			isa = PBXGroup;
+			children = (
+				318CBB442368690F006D7469 /* libswift-static-lib.a */,
+				318CBB452368690F006D7469 /* swift_static_lib.swiftmodule */,
+			);
+			path = "Debug-iphonesimulator";
+			sourceTree = "<group>";
+		};
+		318CBB452368690F006D7469 /* swift_static_lib.swiftmodule */ = {
+			isa = PBXGroup;
+			children = (
+				318CBB462368690F006D7469 /* x86_64-apple-ios-simulator.swiftdoc */,
+				318CBB472368690F006D7469 /* x86_64-apple-ios-simulator.swiftmodule */,
+				318CBB482368690F006D7469 /* x86_64.swiftdoc */,
+				318CBB492368690F006D7469 /* x86_64.swiftmodule */,
+			);
+			path = swift_static_lib.swiftmodule;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
