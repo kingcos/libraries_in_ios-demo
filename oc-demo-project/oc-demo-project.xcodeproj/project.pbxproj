@@ -14,6 +14,7 @@
 		318CBAE523685E05006D7469 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 318CBAE423685E05006D7469 /* Assets.xcassets */; };
 		318CBAE823685E05006D7469 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 318CBAE623685E05006D7469 /* LaunchScreen.storyboard */; };
 		318CBAEB23685E05006D7469 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 318CBAEA23685E05006D7469 /* main.m */; };
+		318CBB2E23686078006D7469 /* liboc-static-lib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 318CBB2C23686078006D7469 /* liboc-static-lib.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +30,9 @@
 		318CBAE723685E05006D7469 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		318CBAE923685E05006D7469 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		318CBAEA23685E05006D7469 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		318CBB2B23686078006D7469 /* NSObject+OC_Static_Lib.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+OC_Static_Lib.h"; sourceTree = "<group>"; };
+		318CBB2C23686078006D7469 /* liboc-static-lib.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "liboc-static-lib.a"; sourceTree = "<group>"; };
+		318CBB2D23686078006D7469 /* oc_static_lib.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = oc_static_lib.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,6 +40,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				318CBB2E23686078006D7469 /* liboc-static-lib.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,6 +66,7 @@
 		318CBAD723685E04006D7469 /* oc-demo-project */ = {
 			isa = PBXGroup;
 			children = (
+				318CBB2A23686078006D7469 /* oc-static-lib */,
 				318CBAD823685E04006D7469 /* AppDelegate.h */,
 				318CBAD923685E04006D7469 /* AppDelegate.m */,
 				318CBADB23685E04006D7469 /* SceneDelegate.h */,
@@ -74,6 +80,16 @@
 				318CBAEA23685E05006D7469 /* main.m */,
 			);
 			path = "oc-demo-project";
+			sourceTree = "<group>";
+		};
+		318CBB2A23686078006D7469 /* oc-static-lib */ = {
+			isa = PBXGroup;
+			children = (
+				318CBB2B23686078006D7469 /* NSObject+OC_Static_Lib.h */,
+				318CBB2C23686078006D7469 /* liboc-static-lib.a */,
+				318CBB2D23686078006D7469 /* oc_static_lib.h */,
+			);
+			path = "oc-static-lib";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -299,7 +315,10 @@
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/oc_static_lib",
+					"$(PROJECT_DIR)/oc-static-lib",
+					"$(PROJECT_DIR)/oc-demo-project/oc-static-lib",
 				);
+				OTHER_LDFLAGS = "";
 				PRODUCT_BUNDLE_IDENTIFIER = "me.kingcos.oc-demo-project";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -320,7 +339,10 @@
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/oc_static_lib",
+					"$(PROJECT_DIR)/oc-static-lib",
+					"$(PROJECT_DIR)/oc-demo-project/oc-static-lib",
 				);
+				OTHER_LDFLAGS = "";
 				PRODUCT_BUNDLE_IDENTIFIER = "me.kingcos.oc-demo-project";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";

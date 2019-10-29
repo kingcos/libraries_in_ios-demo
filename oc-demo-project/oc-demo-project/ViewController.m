@@ -7,6 +7,8 @@
 //
 
 #import "ViewController.h"
+#import "oc-static-lib/oc_static_lib.h"
+#import "NSObject+OC_Static_Lib.h"
 
 @interface ViewController ()
 
@@ -17,6 +19,9 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    
+    [[oc_static_lib new] foo];
+    [[NSObject new] foo];
 }
 
 
