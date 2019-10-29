@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:oc_static_lib.xcodeproj">
+      location = "self:oc-static-lib.xcodeproj">
    </FileRef>
 </Workspace>

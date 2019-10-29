@@ -7,39 +7,39 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		318CBAB3236859B5006D7469 /* oc_static_lib.m in Sources */ = {isa = PBXBuildFile; fileRef = 318CBAB2236859B5006D7469 /* oc_static_lib.m */; };
-		318CBAB4236859B5006D7469 /* oc_static_lib.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 318CBAB1236859B5006D7469 /* oc_static_lib.h */; };
-		318CBABC23685C31006D7469 /* NSObject+OC_Static_Lib.m in Sources */ = {isa = PBXBuildFile; fileRef = 318CBABB23685C31006D7469 /* NSObject+OC_Static_Lib.m */; };
-		318CBABD23685CBA006D7469 /* NSObject+OC_Static_Lib.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 318CBABA23685C31006D7469 /* NSObject+OC_Static_Lib.h */; };
+		318CBB0E23685F21006D7469 /* oc_static_lib.m in Sources */ = {isa = PBXBuildFile; fileRef = 318CBB0D23685F21006D7469 /* oc_static_lib.m */; };
+		318CBB0F23685F21006D7469 /* oc_static_lib.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 318CBB0C23685F21006D7469 /* oc_static_lib.h */; };
+		318CBB1723685F51006D7469 /* NSObject+OC_Static_Lib.m in Sources */ = {isa = PBXBuildFile; fileRef = 318CBB1623685F51006D7469 /* NSObject+OC_Static_Lib.m */; };
+		318CBB1823685F81006D7469 /* NSObject+OC_Static_Lib.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 318CBB1523685F51006D7469 /* NSObject+OC_Static_Lib.h */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		318CBAAC236859B5006D7469 /* CopyFiles */ = {
+		318CBB0723685F21006D7469 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "include/$(PRODUCT_NAME)";
 			dstSubfolderSpec = 16;
 			files = (
-				318CBAB4236859B5006D7469 /* oc_static_lib.h in CopyFiles */,
-				318CBABD23685CBA006D7469 /* NSObject+OC_Static_Lib.h in CopyFiles */,
+				318CBB0F23685F21006D7469 /* oc_static_lib.h in CopyFiles */,
+				318CBB1823685F81006D7469 /* NSObject+OC_Static_Lib.h in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		318CBAAE236859B5006D7469 /* liboc_static_lib.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = liboc_static_lib.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		318CBAB1236859B5006D7469 /* oc_static_lib.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = oc_static_lib.h; sourceTree = "<group>"; };
-		318CBAB2236859B5006D7469 /* oc_static_lib.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = oc_static_lib.m; sourceTree = "<group>"; };
-		318CBABA23685C31006D7469 /* NSObject+OC_Static_Lib.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+OC_Static_Lib.h"; sourceTree = "<group>"; };
-		318CBABB23685C31006D7469 /* NSObject+OC_Static_Lib.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+OC_Static_Lib.m"; sourceTree = "<group>"; };
-		318CBAC923685D3D006D7469 /* NSObject+OC_Static_Lib.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+OC_Static_Lib.h"; sourceTree = "<group>"; };
-		318CBACA23685D3D006D7469 /* oc_static_lib.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = oc_static_lib.h; sourceTree = "<group>"; };
-		318CBACB23685D3D006D7469 /* liboc_static_lib.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = liboc_static_lib.a; sourceTree = "<group>"; };
+		318CBB0923685F21006D7469 /* liboc-static-lib.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "liboc-static-lib.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		318CBB0C23685F21006D7469 /* oc_static_lib.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = oc_static_lib.h; sourceTree = "<group>"; };
+		318CBB0D23685F21006D7469 /* oc_static_lib.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = oc_static_lib.m; sourceTree = "<group>"; };
+		318CBB1523685F51006D7469 /* NSObject+OC_Static_Lib.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+OC_Static_Lib.h"; sourceTree = "<group>"; };
+		318CBB1623685F51006D7469 /* NSObject+OC_Static_Lib.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+OC_Static_Lib.m"; sourceTree = "<group>"; };
+		318CBB1D23685FA4006D7469 /* NSObject+OC_Static_Lib.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+OC_Static_Lib.h"; sourceTree = "<group>"; };
+		318CBB1E23685FA4006D7469 /* oc_static_lib.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = oc_static_lib.h; sourceTree = "<group>"; };
+		318CBB1F23685FA4006D7469 /* liboc-static-lib.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "liboc-static-lib.a"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		318CBAAB236859B5006D7469 /* Frameworks */ = {
+		318CBB0623685F21006D7469 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -49,103 +49,103 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		318CBAA5236859B5006D7469 = {
+		318CBB0023685F21006D7469 = {
 			isa = PBXGroup;
 			children = (
-				318CBAB0236859B5006D7469 /* oc_static_lib */,
-				318CBAAF236859B5006D7469 /* Products */,
+				318CBB0B23685F21006D7469 /* oc-static-lib */,
+				318CBB0A23685F21006D7469 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		318CBAAF236859B5006D7469 /* Products */ = {
+		318CBB0A23685F21006D7469 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				318CBAAE236859B5006D7469 /* liboc_static_lib.a */,
+				318CBB0923685F21006D7469 /* liboc-static-lib.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		318CBAB0236859B5006D7469 /* oc_static_lib */ = {
+		318CBB0B23685F21006D7469 /* oc-static-lib */ = {
 			isa = PBXGroup;
 			children = (
-				318CBAC523685D3D006D7469 /* Products */,
-				318CBAB1236859B5006D7469 /* oc_static_lib.h */,
-				318CBAB2236859B5006D7469 /* oc_static_lib.m */,
-				318CBABA23685C31006D7469 /* NSObject+OC_Static_Lib.h */,
-				318CBABB23685C31006D7469 /* NSObject+OC_Static_Lib.m */,
+				318CBB1923685FA4006D7469 /* Products */,
+				318CBB0C23685F21006D7469 /* oc_static_lib.h */,
+				318CBB0D23685F21006D7469 /* oc_static_lib.m */,
+				318CBB1523685F51006D7469 /* NSObject+OC_Static_Lib.h */,
+				318CBB1623685F51006D7469 /* NSObject+OC_Static_Lib.m */,
 			);
-			path = oc_static_lib;
+			path = "oc-static-lib";
 			sourceTree = "<group>";
 		};
-		318CBAC523685D3D006D7469 /* Products */ = {
+		318CBB1923685FA4006D7469 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				318CBAC623685D3D006D7469 /* Debug-iphonesimulator */,
+				318CBB1A23685FA4006D7469 /* Debug-iphonesimulator */,
 			);
 			path = Products;
 			sourceTree = SOURCE_ROOT;
 		};
-		318CBAC623685D3D006D7469 /* Debug-iphonesimulator */ = {
+		318CBB1A23685FA4006D7469 /* Debug-iphonesimulator */ = {
 			isa = PBXGroup;
 			children = (
-				318CBAC723685D3D006D7469 /* include */,
-				318CBACB23685D3D006D7469 /* liboc_static_lib.a */,
+				318CBB1B23685FA4006D7469 /* include */,
+				318CBB1F23685FA4006D7469 /* liboc-static-lib.a */,
 			);
 			path = "Debug-iphonesimulator";
 			sourceTree = "<group>";
 		};
-		318CBAC723685D3D006D7469 /* include */ = {
+		318CBB1B23685FA4006D7469 /* include */ = {
 			isa = PBXGroup;
 			children = (
-				318CBAC823685D3D006D7469 /* oc_static_lib */,
+				318CBB1C23685FA4006D7469 /* oc-static-lib */,
 			);
 			path = include;
 			sourceTree = "<group>";
 		};
-		318CBAC823685D3D006D7469 /* oc_static_lib */ = {
+		318CBB1C23685FA4006D7469 /* oc-static-lib */ = {
 			isa = PBXGroup;
 			children = (
-				318CBAC923685D3D006D7469 /* NSObject+OC_Static_Lib.h */,
-				318CBACA23685D3D006D7469 /* oc_static_lib.h */,
+				318CBB1D23685FA4006D7469 /* NSObject+OC_Static_Lib.h */,
+				318CBB1E23685FA4006D7469 /* oc_static_lib.h */,
 			);
-			path = oc_static_lib;
+			path = "oc-static-lib";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		318CBAAD236859B5006D7469 /* oc_static_lib */ = {
+		318CBB0823685F21006D7469 /* oc-static-lib */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 318CBAB7236859B5006D7469 /* Build configuration list for PBXNativeTarget "oc_static_lib" */;
+			buildConfigurationList = 318CBB1223685F21006D7469 /* Build configuration list for PBXNativeTarget "oc-static-lib" */;
 			buildPhases = (
-				318CBAAA236859B5006D7469 /* Sources */,
-				318CBAAB236859B5006D7469 /* Frameworks */,
-				318CBAAC236859B5006D7469 /* CopyFiles */,
+				318CBB0523685F21006D7469 /* Sources */,
+				318CBB0623685F21006D7469 /* Frameworks */,
+				318CBB0723685F21006D7469 /* CopyFiles */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = oc_static_lib;
-			productName = oc_static_lib;
-			productReference = 318CBAAE236859B5006D7469 /* liboc_static_lib.a */;
+			name = "oc-static-lib";
+			productName = "oc-static-lib";
+			productReference = 318CBB0923685F21006D7469 /* liboc-static-lib.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		318CBAA6236859B5006D7469 /* Project object */ = {
+		318CBB0123685F21006D7469 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 1100;
 				ORGANIZATIONNAME = kingcos;
 				TargetAttributes = {
-					318CBAAD236859B5006D7469 = {
+					318CBB0823685F21006D7469 = {
 						CreatedOnToolsVersion = 11.0;
 					};
 				};
 			};
-			buildConfigurationList = 318CBAA9236859B5006D7469 /* Build configuration list for PBXProject "oc_static_lib" */;
+			buildConfigurationList = 318CBB0423685F21006D7469 /* Build configuration list for PBXProject "oc-static-lib" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -153,30 +153,30 @@
 				en,
 				Base,
 			);
-			mainGroup = 318CBAA5236859B5006D7469;
-			productRefGroup = 318CBAAF236859B5006D7469 /* Products */;
+			mainGroup = 318CBB0023685F21006D7469;
+			productRefGroup = 318CBB0A23685F21006D7469 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				318CBAAD236859B5006D7469 /* oc_static_lib */,
+				318CBB0823685F21006D7469 /* oc-static-lib */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		318CBAAA236859B5006D7469 /* Sources */ = {
+		318CBB0523685F21006D7469 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				318CBAB3236859B5006D7469 /* oc_static_lib.m in Sources */,
-				318CBABC23685C31006D7469 /* NSObject+OC_Static_Lib.m in Sources */,
+				318CBB0E23685F21006D7469 /* oc_static_lib.m in Sources */,
+				318CBB1723685F51006D7469 /* NSObject+OC_Static_Lib.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		318CBAB5236859B5006D7469 /* Debug */ = {
+		318CBB1023685F21006D7469 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -234,7 +234,7 @@
 			};
 			name = Debug;
 		};
-		318CBAB6236859B5006D7469 /* Release */ = {
+		318CBB1123685F21006D7469 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -286,7 +286,7 @@
 			};
 			name = Release;
 		};
-		318CBAB8236859B5006D7469 /* Debug */ = {
+		318CBB1323685F21006D7469 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
@@ -298,7 +298,7 @@
 			};
 			name = Debug;
 		};
-		318CBAB9236859B5006D7469 /* Release */ = {
+		318CBB1423685F21006D7469 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
@@ -313,25 +313,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		318CBAA9236859B5006D7469 /* Build configuration list for PBXProject "oc_static_lib" */ = {
+		318CBB0423685F21006D7469 /* Build configuration list for PBXProject "oc-static-lib" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				318CBAB5236859B5006D7469 /* Debug */,
-				318CBAB6236859B5006D7469 /* Release */,
+				318CBB1023685F21006D7469 /* Debug */,
+				318CBB1123685F21006D7469 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		318CBAB7236859B5006D7469 /* Build configuration list for PBXNativeTarget "oc_static_lib" */ = {
+		318CBB1223685F21006D7469 /* Build configuration list for PBXNativeTarget "oc-static-lib" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				318CBAB8236859B5006D7469 /* Debug */,
-				318CBAB9236859B5006D7469 /* Release */,
+				318CBB1323685F21006D7469 /* Debug */,
+				318CBB1423685F21006D7469 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 318CBAA6236859B5006D7469 /* Project object */;
+	rootObject = 318CBB0123685F21006D7469 /* Project object */;
 }
