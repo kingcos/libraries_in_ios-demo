@@ -372,6 +372,7 @@
 					"$(PROJECT_DIR)/swift-demo-project/libswift-static-lib",
 					"$(PROJECT_DIR)/swift-demo-project/liboc-static-lib",
 				);
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = "me.kingcos.swift-demo-project";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_INCLUDE_PATHS = "\"$(SRCROOT)/swift-demo-project/libswift-static-lib\"";
@@ -399,6 +400,7 @@
 					"$(PROJECT_DIR)/swift-demo-project/libswift-static-lib",
 					"$(PROJECT_DIR)/swift-demo-project/liboc-static-lib",
 				);
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = "me.kingcos.swift-demo-project";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_INCLUDE_PATHS = "\"$(SRCROOT)/swift-demo-project/libswift-static-lib\"";
