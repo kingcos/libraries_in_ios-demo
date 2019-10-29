@@ -10,6 +10,9 @@
 #import "oc-static-lib/oc_static_lib.h"
 #import "NSObject+OC_Static_Lib.h"
 
+//#import "swift-static-lib/include/swift_static_lib/swift_static_lib-Swift.h"
+#import "swift_static_lib-Swift.h"
+
 @interface ViewController ()
 
 @end
@@ -22,6 +25,8 @@
     
     [[oc_static_lib new] foo];
     [[NSObject new] foo];
+    
+    [[swift_static_lib new] foo];
 }
 
 

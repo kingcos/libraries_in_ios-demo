@@ -16,6 +16,7 @@
 		318CBAEB23685E05006D7469 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 318CBAEA23685E05006D7469 /* main.m */; };
 		318CBB2E23686078006D7469 /* liboc-static-lib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 318CBB2C23686078006D7469 /* liboc-static-lib.a */; };
 		318CBB7823686CC6006D7469 /* Placeholder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 318CBB7723686CC6006D7469 /* Placeholder.swift */; };
+		318CBB9123686EB3006D7469 /* libswift-static-lib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 318CBB8723686E93006D7469 /* libswift-static-lib.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +37,12 @@
 		318CBB2D23686078006D7469 /* oc_static_lib.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = oc_static_lib.h; sourceTree = "<group>"; };
 		318CBB7623686CC5006D7469 /* oc-demo-project-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "oc-demo-project-Bridging-Header.h"; sourceTree = "<group>"; };
 		318CBB7723686CC6006D7469 /* Placeholder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Placeholder.swift; sourceTree = "<group>"; };
+		318CBB8723686E93006D7469 /* libswift-static-lib.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libswift-static-lib.a"; sourceTree = "<group>"; };
+		318CBB8A23686E93006D7469 /* swift_static_lib-Swift.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "swift_static_lib-Swift.h"; sourceTree = "<group>"; };
+		318CBB8C23686E93006D7469 /* x86_64-apple-ios-simulator.swiftdoc */ = {isa = PBXFileReference; lastKnownFileType = file; path = "x86_64-apple-ios-simulator.swiftdoc"; sourceTree = "<group>"; };
+		318CBB8D23686E93006D7469 /* x86_64-apple-ios-simulator.swiftmodule */ = {isa = PBXFileReference; lastKnownFileType = file; path = "x86_64-apple-ios-simulator.swiftmodule"; sourceTree = "<group>"; };
+		318CBB8E23686E93006D7469 /* x86_64.swiftdoc */ = {isa = PBXFileReference; lastKnownFileType = file; path = x86_64.swiftdoc; sourceTree = "<group>"; };
+		318CBB8F23686E93006D7469 /* x86_64.swiftmodule */ = {isa = PBXFileReference; lastKnownFileType = file; path = x86_64.swiftmodule; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -44,6 +51,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				318CBB2E23686078006D7469 /* liboc-static-lib.a in Frameworks */,
+				318CBB9123686EB3006D7469 /* libswift-static-lib.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -55,6 +63,7 @@
 			children = (
 				318CBAD723685E04006D7469 /* oc-demo-project */,
 				318CBAD623685E04006D7469 /* Products */,
+				318CBB9023686EB3006D7469 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -69,6 +78,7 @@
 		318CBAD723685E04006D7469 /* oc-demo-project */ = {
 			isa = PBXGroup;
 			children = (
+				318CBB8623686E93006D7469 /* swift-static-lib */,
 				318CBB2A23686078006D7469 /* oc-static-lib */,
 				318CBAD823685E04006D7469 /* AppDelegate.h */,
 				318CBAD923685E04006D7469 /* AppDelegate.m */,
@@ -95,6 +105,50 @@
 				318CBB2D23686078006D7469 /* oc_static_lib.h */,
 			);
 			path = "oc-static-lib";
+			sourceTree = "<group>";
+		};
+		318CBB8623686E93006D7469 /* swift-static-lib */ = {
+			isa = PBXGroup;
+			children = (
+				318CBB8723686E93006D7469 /* libswift-static-lib.a */,
+				318CBB8823686E93006D7469 /* include */,
+				318CBB8B23686E93006D7469 /* swift_static_lib.swiftmodule */,
+			);
+			path = "swift-static-lib";
+			sourceTree = "<group>";
+		};
+		318CBB8823686E93006D7469 /* include */ = {
+			isa = PBXGroup;
+			children = (
+				318CBB8923686E93006D7469 /* swift_static_lib */,
+			);
+			path = include;
+			sourceTree = "<group>";
+		};
+		318CBB8923686E93006D7469 /* swift_static_lib */ = {
+			isa = PBXGroup;
+			children = (
+				318CBB8A23686E93006D7469 /* swift_static_lib-Swift.h */,
+			);
+			path = swift_static_lib;
+			sourceTree = "<group>";
+		};
+		318CBB8B23686E93006D7469 /* swift_static_lib.swiftmodule */ = {
+			isa = PBXGroup;
+			children = (
+				318CBB8C23686E93006D7469 /* x86_64-apple-ios-simulator.swiftdoc */,
+				318CBB8D23686E93006D7469 /* x86_64-apple-ios-simulator.swiftmodule */,
+				318CBB8E23686E93006D7469 /* x86_64.swiftdoc */,
+				318CBB8F23686E93006D7469 /* x86_64.swiftmodule */,
+			);
+			path = swift_static_lib.swiftmodule;
+			sourceTree = "<group>";
+		};
+		318CBB9023686EB3006D7469 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -315,6 +369,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = HUL9KAA653;
+				HEADER_SEARCH_PATHS = "";
 				INFOPLIST_FILE = "oc-demo-project/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -325,6 +380,7 @@
 					"$(PROJECT_DIR)/oc_static_lib",
 					"$(PROJECT_DIR)/oc-static-lib",
 					"$(PROJECT_DIR)/oc-demo-project/oc-static-lib",
+					"$(PROJECT_DIR)/oc-demo-project/swift-static-lib",
 				);
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = "me.kingcos.oc-demo-project";
@@ -343,6 +399,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = HUL9KAA653;
+				HEADER_SEARCH_PATHS = "";
 				INFOPLIST_FILE = "oc-demo-project/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -353,6 +410,7 @@
 					"$(PROJECT_DIR)/oc_static_lib",
 					"$(PROJECT_DIR)/oc-static-lib",
 					"$(PROJECT_DIR)/oc-demo-project/oc-static-lib",
+					"$(PROJECT_DIR)/oc-demo-project/swift-static-lib",
 				);
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = "me.kingcos.oc-demo-project";
