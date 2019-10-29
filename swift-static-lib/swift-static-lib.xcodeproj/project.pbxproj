@@ -184,7 +184,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "# Powered by https://paul-samuels.com/blog/2018/01/14/swift-static-library-in-objective-c/\n\n# BUILT_PRODUCTS_DIR：构建产物目录；PRODUCT_MODULE_NAME：产物名称\ntarget_dir=${BUILT_PRODUCTS_DIR}/include/${PRODUCT_MODULE_NAME}/\n\n# Ensure the target include path exists\n# 递归创建文件夹\nmkdir -p ${target_dir}\n\n# Copy any file that looks like a Swift generated header to the include path\n# 复制到与 .a 同级目录\ncp ${DERIVED_SOURCES_DIR}/*-Swift.h ${target_dir}\n";
+			shellScript = "# Powered by https://paul-samuels.com/blog/2018/01/14/swift-static-library-in-objective-c/\n\n# BUILT_PRODUCTS_DIR：构建产物目录；PRODUCT_MODULE_NAME：产物名称\ntarget_dir=${BUILT_PRODUCTS_DIR}/include/${PRODUCT_MODULE_NAME}/\n\n# Ensure the target include path exists\n# 递归创建文件夹\nmkdir -p ${target_dir}\n\n# Copy any file that looks like a Swift generated header to the include path\n# 复制到产物路径\ncp ${DERIVED_SOURCES_DIR}/*-Swift.h ${target_dir}\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
