@@ -18,6 +18,7 @@
 		318CBB7323686A9C006D7469 /* x86_64-apple-ios-simulator.swiftmodule in Resources */ = {isa = PBXBuildFile; fileRef = 318CBB6E23686A9C006D7469 /* x86_64-apple-ios-simulator.swiftmodule */; };
 		318CBB7423686A9C006D7469 /* x86_64.swiftdoc in Resources */ = {isa = PBXBuildFile; fileRef = 318CBB6F23686A9C006D7469 /* x86_64.swiftdoc */; };
 		318CBB7523686A9C006D7469 /* x86_64.swiftmodule in Resources */ = {isa = PBXBuildFile; fileRef = 318CBB7023686A9C006D7469 /* x86_64.swiftmodule */; };
+		842B53AB2368A32D003949DC /* Placeholder.m in Sources */ = {isa = PBXBuildFile; fileRef = 842B53AA2368A32D003949DC /* Placeholder.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,8 @@
 		318CBB6E23686A9C006D7469 /* x86_64-apple-ios-simulator.swiftmodule */ = {isa = PBXFileReference; lastKnownFileType = file; path = "x86_64-apple-ios-simulator.swiftmodule"; sourceTree = "<group>"; };
 		318CBB6F23686A9C006D7469 /* x86_64.swiftdoc */ = {isa = PBXFileReference; lastKnownFileType = file; path = x86_64.swiftdoc; sourceTree = "<group>"; };
 		318CBB7023686A9C006D7469 /* x86_64.swiftmodule */ = {isa = PBXFileReference; lastKnownFileType = file; path = x86_64.swiftmodule; sourceTree = "<group>"; };
+		842B53A92368A32D003949DC /* swift-demo-project-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "swift-demo-project-Bridging-Header.h"; sourceTree = "<group>"; };
+		842B53AA2368A32D003949DC /* Placeholder.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Placeholder.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +78,8 @@
 				318CBB5F236869D5006D7469 /* Assets.xcassets */,
 				318CBB61236869D5006D7469 /* LaunchScreen.storyboard */,
 				318CBB64236869D5006D7469 /* Info.plist */,
+				842B53AA2368A32D003949DC /* Placeholder.m */,
+				842B53A92368A32D003949DC /* swift-demo-project-Bridging-Header.h */,
 			);
 			path = "swift-demo-project";
 			sourceTree = "<group>";
@@ -131,6 +136,7 @@
 				TargetAttributes = {
 					318CBB52236869D5006D7469 = {
 						CreatedOnToolsVersion = 11.0;
+						LastSwiftMigration = 1110;
 					};
 				};
 			};
@@ -177,6 +183,7 @@
 				318CBB5B236869D5006D7469 /* ViewController.swift in Sources */,
 				318CBB57236869D5006D7469 /* AppDelegate.swift in Sources */,
 				318CBB59236869D5006D7469 /* SceneDelegate.swift in Sources */,
+				842B53AB2368A32D003949DC /* Placeholder.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -320,6 +327,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = HUL9KAA653;
 				INFOPLIST_FILE = "swift-demo-project/Info.plist";
@@ -334,6 +342,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "me.kingcos.swift-demo-project";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_INCLUDE_PATHS = "\"$(SRCROOT)/swift-demo-project/libswift-static-lib\"";
+				SWIFT_OBJC_BRIDGING_HEADER = "swift-demo-project/swift-demo-project-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -343,6 +353,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = HUL9KAA653;
 				INFOPLIST_FILE = "swift-demo-project/Info.plist";
@@ -357,6 +368,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "me.kingcos.swift-demo-project";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_INCLUDE_PATHS = "\"$(SRCROOT)/swift-demo-project/libswift-static-lib\"";
+				SWIFT_OBJC_BRIDGING_HEADER = "swift-demo-project/swift-demo-project-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
