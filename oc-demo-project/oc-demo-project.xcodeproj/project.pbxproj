@@ -318,7 +318,7 @@
 					"$(PROJECT_DIR)/oc-static-lib",
 					"$(PROJECT_DIR)/oc-demo-project/oc-static-lib",
 				);
-				OTHER_LDFLAGS = "";
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = "me.kingcos.oc-demo-project";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -342,7 +342,7 @@
 					"$(PROJECT_DIR)/oc-static-lib",
 					"$(PROJECT_DIR)/oc-demo-project/oc-static-lib",
 				);
-				OTHER_LDFLAGS = "";
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = "me.kingcos.oc-demo-project";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
