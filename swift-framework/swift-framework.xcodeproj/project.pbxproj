@@ -18,6 +18,7 @@
 		318CBBC62369AF1D006D7469 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		318CBBCD2369AF56006D7469 /* Swift_Foo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Swift_Foo.swift; sourceTree = "<group>"; };
 		318CBBCF2369AF80006D7469 /* demo.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = demo.strings; sourceTree = "<group>"; };
+		318CBBD32369B0D6006D7469 /* swift_framework.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = swift_framework.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -50,12 +51,29 @@
 		318CBBC42369AF1D006D7469 /* swift-framework */ = {
 			isa = PBXGroup;
 			children = (
+				318CBBD12369B0D6006D7469 /* Products */,
 				318CBBC52369AF1D006D7469 /* swift_framework.h */,
 				318CBBCD2369AF56006D7469 /* Swift_Foo.swift */,
 				318CBBC62369AF1D006D7469 /* Info.plist */,
 				318CBBCF2369AF80006D7469 /* demo.strings */,
 			);
 			path = "swift-framework";
+			sourceTree = "<group>";
+		};
+		318CBBD12369B0D6006D7469 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				318CBBD22369B0D6006D7469 /* Debug-iphonesimulator */,
+			);
+			path = Products;
+			sourceTree = SOURCE_ROOT;
+		};
+		318CBBD22369B0D6006D7469 /* Debug-iphonesimulator */ = {
+			isa = PBXGroup;
+			children = (
+				318CBBD32369B0D6006D7469 /* swift_framework.framework */,
+			);
+			path = "Debug-iphonesimulator";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
