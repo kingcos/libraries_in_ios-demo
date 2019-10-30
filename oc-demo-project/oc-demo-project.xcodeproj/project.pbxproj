@@ -17,7 +17,26 @@
 		318CBB2E23686078006D7469 /* liboc-static-lib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 318CBB2C23686078006D7469 /* liboc-static-lib.a */; };
 		318CBB7823686CC6006D7469 /* Placeholder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 318CBB7723686CC6006D7469 /* Placeholder.swift */; };
 		318CBB9123686EB3006D7469 /* libswift-static-lib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 318CBB8723686E93006D7469 /* libswift-static-lib.a */; };
+		318CBBD82369B1A1006D7469 /* oc_framework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 318CBBD42369B16F006D7469 /* oc_framework.framework */; };
+		318CBBD92369B1A1006D7469 /* oc_framework.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 318CBBD42369B16F006D7469 /* oc_framework.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		318CBBE52369B58D006D7469 /* swift_framework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 318CBBE42369B586006D7469 /* swift_framework.framework */; };
+		318CBBE62369B58D006D7469 /* swift_framework.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 318CBBE42369B586006D7469 /* swift_framework.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		318CBBDA2369B1A1006D7469 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				318CBBD92369B1A1006D7469 /* oc_framework.framework in Embed Frameworks */,
+				318CBBE62369B58D006D7469 /* swift_framework.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		318CBAD523685E04006D7469 /* oc-demo-project.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "oc-demo-project.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -43,6 +62,8 @@
 		318CBB8D23686E93006D7469 /* x86_64-apple-ios-simulator.swiftmodule */ = {isa = PBXFileReference; lastKnownFileType = file; path = "x86_64-apple-ios-simulator.swiftmodule"; sourceTree = "<group>"; };
 		318CBB8E23686E93006D7469 /* x86_64.swiftdoc */ = {isa = PBXFileReference; lastKnownFileType = file; path = x86_64.swiftdoc; sourceTree = "<group>"; };
 		318CBB8F23686E93006D7469 /* x86_64.swiftmodule */ = {isa = PBXFileReference; lastKnownFileType = file; path = x86_64.swiftmodule; sourceTree = "<group>"; };
+		318CBBD42369B16F006D7469 /* oc_framework.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = oc_framework.framework; sourceTree = "<group>"; };
+		318CBBE42369B586006D7469 /* swift_framework.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = swift_framework.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,7 +72,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				318CBB2E23686078006D7469 /* liboc-static-lib.a in Frameworks */,
+				318CBBD82369B1A1006D7469 /* oc_framework.framework in Frameworks */,
 				318CBB9123686EB3006D7469 /* libswift-static-lib.a in Frameworks */,
+				318CBBE52369B58D006D7469 /* swift_framework.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,6 +101,8 @@
 		318CBAD723685E04006D7469 /* oc-demo-project */ = {
 			isa = PBXGroup;
 			children = (
+				318CBBE42369B586006D7469 /* swift_framework.framework */,
+				318CBBD42369B16F006D7469 /* oc_framework.framework */,
 				318CBB8623686E93006D7469 /* swift-static-lib */,
 				318CBB2A23686078006D7469 /* oc-static-lib */,
 				318CBAD823685E04006D7469 /* AppDelegate.h */,
@@ -161,6 +186,7 @@
 				318CBAD123685E04006D7469 /* Sources */,
 				318CBAD223685E04006D7469 /* Frameworks */,
 				318CBAD323685E04006D7469 /* Resources */,
+				318CBBDA2369B1A1006D7469 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -369,6 +395,10 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = HUL9KAA653;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/oc-demo-project",
+				);
 				HEADER_SEARCH_PATHS = "";
 				INFOPLIST_FILE = "oc-demo-project/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -399,6 +429,10 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = HUL9KAA653;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/oc-demo-project",
+				);
 				HEADER_SEARCH_PATHS = "";
 				INFOPLIST_FILE = "oc-demo-project/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (

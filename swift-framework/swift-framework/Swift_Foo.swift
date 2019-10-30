@@ -15,6 +15,6 @@ import Foundation
 
     @objc public func strings() -> String {
         let bundle = Bundle(for: Swift_Foo.self)
-        return NSLocalizedString("my-blog", bundle: bundle, comment: "My blog link.")
+        return NSLocalizedString("my_blog", bundle: bundle, comment: "My blog link.")
     }
 }
