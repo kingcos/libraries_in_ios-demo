@@ -1,0 +1,6 @@
+framework module oc_framework {
+  umbrella header "oc_framework.h"
+
+  export *
+  module * { export * }
+}
