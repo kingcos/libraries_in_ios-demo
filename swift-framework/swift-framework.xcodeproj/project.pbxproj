@@ -6,11 +6,45 @@
 	objectVersion = 50;
 	objects = {
 
+/* Begin PBXAggregateTarget section */
+		318CBBE7236AE66C006D7469 /* swift-framework-aggregate */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 318CBBEA236AE66D006D7469 /* Build configuration list for PBXAggregateTarget "swift-framework-aggregate" */;
+			buildPhases = (
+			);
+			dependencies = (
+				318CBBEC236AE690006D7469 /* PBXTargetDependency */,
+				318CBBFC236AE6D8006D7469 /* PBXTargetDependency */,
+			);
+			name = "swift-framework-aggregate";
+			productName = "swift-framework-aggregate";
+		};
+/* End PBXAggregateTarget section */
+
 /* Begin PBXBuildFile section */
 		318CBBC72369AF1D006D7469 /* swift_framework.h in Headers */ = {isa = PBXBuildFile; fileRef = 318CBBC52369AF1D006D7469 /* swift_framework.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		318CBBCE2369AF56006D7469 /* Swift_Foo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 318CBBCD2369AF56006D7469 /* Swift_Foo.swift */; };
 		318CBBD02369AF80006D7469 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 318CBBCF2369AF80006D7469 /* Localizable.strings */; };
+		318CBBF7236AE6D0006D7469 /* another_swift_framework.h in Headers */ = {isa = PBXBuildFile; fileRef = 318CBBF5236AE6D0006D7469 /* another_swift_framework.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		318CBBFE236AE6E8006D7469 /* Swift_Bar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 318CBBFD236AE6E8006D7469 /* Swift_Bar.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		318CBBEB236AE690006D7469 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 318CBBB92369AF1D006D7469 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 318CBBC12369AF1D006D7469;
+			remoteInfo = "swift-framework";
+		};
+		318CBBFB236AE6D8006D7469 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 318CBBB92369AF1D006D7469 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 318CBBF2236AE6D0006D7469;
+			remoteInfo = "another-swift-framework";
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		318CBBC22369AF1D006D7469 /* swift_framework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = swift_framework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -19,10 +53,21 @@
 		318CBBCD2369AF56006D7469 /* Swift_Foo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Swift_Foo.swift; sourceTree = "<group>"; };
 		318CBBCF2369AF80006D7469 /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
 		318CBBDF2369B46D006D7469 /* swift_framework.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = swift_framework.framework; sourceTree = "<group>"; };
+		318CBBF3236AE6D0006D7469 /* another_swift_framework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = another_swift_framework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		318CBBF5236AE6D0006D7469 /* another_swift_framework.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = another_swift_framework.h; sourceTree = "<group>"; };
+		318CBBF6236AE6D0006D7469 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		318CBBFD236AE6E8006D7469 /* Swift_Bar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Swift_Bar.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		318CBBBF2369AF1D006D7469 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		318CBBF0236AE6D0006D7469 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -36,6 +81,7 @@
 			isa = PBXGroup;
 			children = (
 				318CBBC42369AF1D006D7469 /* swift-framework */,
+				318CBBF4236AE6D0006D7469 /* another-swift-framework */,
 				318CBBC32369AF1D006D7469 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -44,6 +90,7 @@
 			isa = PBXGroup;
 			children = (
 				318CBBC22369AF1D006D7469 /* swift_framework.framework */,
+				318CBBF3236AE6D0006D7469 /* another_swift_framework.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -51,6 +98,7 @@
 		318CBBC42369AF1D006D7469 /* swift-framework */ = {
 			isa = PBXGroup;
 			children = (
+				318CBBED236AE6AE006D7469 /* AnotherFramework */,
 				318CBBDD2369B46D006D7469 /* Products */,
 				318CBBC52369AF1D006D7469 /* swift_framework.h */,
 				318CBBCD2369AF56006D7469 /* Swift_Foo.swift */,
@@ -76,6 +124,23 @@
 			path = "Debug-iphonesimulator";
 			sourceTree = "<group>";
 		};
+		318CBBED236AE6AE006D7469 /* AnotherFramework */ = {
+			isa = PBXGroup;
+			children = (
+				318CBBFD236AE6E8006D7469 /* Swift_Bar.swift */,
+			);
+			path = AnotherFramework;
+			sourceTree = "<group>";
+		};
+		318CBBF4236AE6D0006D7469 /* another-swift-framework */ = {
+			isa = PBXGroup;
+			children = (
+				318CBBF5236AE6D0006D7469 /* another_swift_framework.h */,
+				318CBBF6236AE6D0006D7469 /* Info.plist */,
+			);
+			path = "another-swift-framework";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -84,6 +149,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				318CBBC72369AF1D006D7469 /* swift_framework.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		318CBBEE236AE6D0006D7469 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				318CBBF7236AE6D0006D7469 /* another_swift_framework.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -108,6 +181,24 @@
 			productReference = 318CBBC22369AF1D006D7469 /* swift_framework.framework */;
 			productType = "com.apple.product-type.framework";
 		};
+		318CBBF2236AE6D0006D7469 /* another-swift-framework */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 318CBBF8236AE6D0006D7469 /* Build configuration list for PBXNativeTarget "another-swift-framework" */;
+			buildPhases = (
+				318CBBEE236AE6D0006D7469 /* Headers */,
+				318CBBEF236AE6D0006D7469 /* Sources */,
+				318CBBF0236AE6D0006D7469 /* Frameworks */,
+				318CBBF1236AE6D0006D7469 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "another-swift-framework";
+			productName = "another-swift-framework";
+			productReference = 318CBBF3236AE6D0006D7469 /* another_swift_framework.framework */;
+			productType = "com.apple.product-type.framework";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -118,6 +209,13 @@
 				ORGANIZATIONNAME = kingcos;
 				TargetAttributes = {
 					318CBBC12369AF1D006D7469 = {
+						CreatedOnToolsVersion = 11.0;
+						LastSwiftMigration = 1100;
+					};
+					318CBBE7236AE66C006D7469 = {
+						CreatedOnToolsVersion = 11.0;
+					};
+					318CBBF2236AE6D0006D7469 = {
 						CreatedOnToolsVersion = 11.0;
 						LastSwiftMigration = 1100;
 					};
@@ -137,6 +235,8 @@
 			projectRoot = "";
 			targets = (
 				318CBBC12369AF1D006D7469 /* swift-framework */,
+				318CBBF2236AE6D0006D7469 /* another-swift-framework */,
+				318CBBE7236AE66C006D7469 /* swift-framework-aggregate */,
 			);
 		};
 /* End PBXProject section */
@@ -147,6 +247,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				318CBBD02369AF80006D7469 /* Localizable.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		318CBBF1236AE6D0006D7469 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -161,7 +268,28 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		318CBBEF236AE6D0006D7469 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				318CBBFE236AE6E8006D7469 /* Swift_Bar.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		318CBBEC236AE690006D7469 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 318CBBC12369AF1D006D7469 /* swift-framework */;
+			targetProxy = 318CBBEB236AE690006D7469 /* PBXContainerItemProxy */;
+		};
+		318CBBFC236AE6D8006D7469 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 318CBBF2236AE6D0006D7469 /* another-swift-framework */;
+			targetProxy = 318CBBFB236AE6D8006D7469 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		318CBBC82369AF1D006D7469 /* Debug */ = {
@@ -335,6 +463,75 @@
 			};
 			name = Release;
 		};
+		318CBBE8236AE66D006D7469 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = HUL9KAA653;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		318CBBE9236AE66D006D7469 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = HUL9KAA653;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		318CBBF9236AE6D0006D7469 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = HUL9KAA653;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "another-swift-framework/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "me.kingcos.another-swift-framework";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		318CBBFA236AE6D0006D7469 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = HUL9KAA653;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "another-swift-framework/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "me.kingcos.another-swift-framework";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -352,6 +549,24 @@
 			buildConfigurations = (
 				318CBBCB2369AF1D006D7469 /* Debug */,
 				318CBBCC2369AF1D006D7469 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		318CBBEA236AE66D006D7469 /* Build configuration list for PBXAggregateTarget "swift-framework-aggregate" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				318CBBE8236AE66D006D7469 /* Debug */,
+				318CBBE9236AE66D006D7469 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		318CBBF8236AE6D0006D7469 /* Build configuration list for PBXNativeTarget "another-swift-framework" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				318CBBF9236AE6D0006D7469 /* Debug */,
+				318CBBFA236AE6D0006D7469 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
