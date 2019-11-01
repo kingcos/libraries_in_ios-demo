@@ -112,6 +112,7 @@
 				318CBC04236BE05F006D7469 /* Sources */,
 				318CBC05236BE05F006D7469 /* Frameworks */,
 				318CBC06236BE05F006D7469 /* Resources */,
+				37EFDA19DFD4EB4717D3403C /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -168,6 +169,30 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		37EFDA19DFD4EB4717D3403C /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-oc-demo-project-pod/Pods-oc-demo-project-pod-resources.sh",
+				"${PODS_ROOT}/../../oc-pod/oc-pod/Assets/info.json",
+				"${PODS_CONFIGURATION_BUILD_DIR}/oc-pod/oc-pod.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/info.json",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/oc-pod.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-oc-demo-project-pod/Pods-oc-demo-project-pod-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		402E9D1CF4FD5158BD448C6D /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;

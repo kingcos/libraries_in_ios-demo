@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import <oc-pod/ObjC_Foo.h>
 
 @interface ViewController ()
 
@@ -17,6 +18,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    
+    [[[ObjC_Foo alloc] init] foo];
 }
 
 
