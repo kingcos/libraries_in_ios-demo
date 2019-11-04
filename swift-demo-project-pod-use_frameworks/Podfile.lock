@@ -1,0 +1,42 @@
+PODS:
+  - AFNetworking (3.2.1):
+    - AFNetworking/NSURLSession (= 3.2.1)
+    - AFNetworking/Reachability (= 3.2.1)
+    - AFNetworking/Security (= 3.2.1)
+    - AFNetworking/Serialization (= 3.2.1)
+    - AFNetworking/UIKit (= 3.2.1)
+  - AFNetworking/NSURLSession (3.2.1):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/Reachability (3.2.1)
+  - AFNetworking/Security (3.2.1)
+  - AFNetworking/Serialization (3.2.1)
+  - AFNetworking/UIKit (3.2.1):
+    - AFNetworking/NSURLSession
+  - oc-pod (0.1.0):
+    - AFNetworking
+  - swift-pod (0.1.0)
+
+DEPENDENCIES:
+  - oc-pod (from `../oc-pod`)
+  - swift-pod (from `../swift-pod`)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - AFNetworking
+
+EXTERNAL SOURCES:
+  oc-pod:
+    :path: "../oc-pod"
+  swift-pod:
+    :path: "../swift-pod"
+
+SPEC CHECKSUMS:
+  AFNetworking: b6f891fdfaed196b46c7a83cf209e09697b94057
+  oc-pod: a4780dbce4c62612c8a6d6f2256aa873e63f75e9
+  swift-pod: fef439b84971179829bcf417ae4902fede1ec741
+
+PODFILE CHECKSUM: 067efd5ae26547c7c51c8fd3516c054633fa29a8
+
+COCOAPODS: 1.7.5

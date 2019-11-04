@@ -1,0 +1,4 @@
+${PODS_ROOT}/Target Support Files/Pods-swift-demo-project-pod/Pods-swift-demo-project-pod-frameworks.sh
+${BUILT_PRODUCTS_DIR}/AFNetworking/AFNetworking.framework
+${BUILT_PRODUCTS_DIR}/oc-pod/oc_pod.framework
+${BUILT_PRODUCTS_DIR}/swift-pod/swift_pod.framework

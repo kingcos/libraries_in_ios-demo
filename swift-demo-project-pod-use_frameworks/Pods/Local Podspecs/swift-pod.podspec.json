@@ -1,0 +1,24 @@
+{
+  "name": "swift-pod",
+  "version": "0.1.0",
+  "summary": "A short description of swift-pod.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/kingcos/libraries_in_ios-demo",
+  "license": {
+    "type": "MIT"
+  },
+  "authors": {
+    "kingcos": "2821836721v@gmail.com"
+  },
+  "source": {
+    "git": "https://github.com/kingcos/libraries_in_ios-demo.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "swift-pod/Classes/**/*",
+  "resources": [
+    "swift-pod/Assets/Localizable.strings"
+  ]
+}
