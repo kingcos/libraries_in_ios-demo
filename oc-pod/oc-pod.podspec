@@ -35,7 +35,7 @@ TODO: Add long description of the pod here.
   # 将通过脚本引入（将直接把文件本身移动到主 Bundle 下）
   s.resources = ['oc-pod/Assets/info.json']
 
-  # 将创建 oc-pod 的 Bundle（将把 Bundle 移动到主 Bundle 下）
+  # 将创建 oc-pod 的 Bundle（将把 Bundle 移动到主 Bundle 下），等同于 s.resources = ['oc-pod/Assets/oc-pod.bundle']
   s.resource_bundles = {
       'oc-pod' => ['oc-pod/Assets/info-bundle.json']
   }
