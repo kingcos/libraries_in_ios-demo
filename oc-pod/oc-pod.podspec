@@ -32,11 +32,15 @@ TODO: Add long description of the pod here.
 
   s.source_files = 'oc-pod/Classes/**/*'
   
-  # s.resource_bundles = {
-  #   'oc-pod' => ['oc-pod/Assets/*.png']
-  # }
+  # 将通过脚本引入（将直接把文件本身移动到主 Bundle 下）
+  s.resources = ['oc-pod/Assets/info.json']
+
+  # 将创建 oc-pod 的 Bundle（将把 Bundle 移动到主 Bundle 下）
+  s.resource_bundles = {
+      'oc-pod' => ['oc-pod/Assets/info-bundle.json']
+  }
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
+   s.dependency 'AFNetworking'
 end
