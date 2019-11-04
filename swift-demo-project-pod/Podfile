@@ -6,5 +6,6 @@ target 'swift-demo-project-pod' do
   # use_frameworks!
 
   # Pods for swift-demo-project-pod
+  pod 'oc-pod', :path => '../oc-pod'
 
 end

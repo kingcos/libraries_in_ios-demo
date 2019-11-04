@@ -1,0 +1,34 @@
+{
+  "name": "oc-pod",
+  "version": "0.1.0",
+  "summary": "A short description of oc-pod.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/kingcos/libraries_in_ios-demo",
+  "license": {
+    "type": "MIT"
+  },
+  "authors": {
+    "kingcos": "2821836721v@gmail.com"
+  },
+  "source": {
+    "git": "https://github.com/kingcos/libraries_in_ios-demo.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "oc-pod/Classes/**/*",
+  "resources": [
+    "oc-pod/Assets/info.json"
+  ],
+  "resource_bundles": {
+    "oc-pod": [
+      "oc-pod/Assets/info-bundle.json"
+    ]
+  },
+  "dependencies": {
+    "AFNetworking": [
+
+    ]
+  }
+}
