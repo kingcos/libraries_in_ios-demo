@@ -7,5 +7,5 @@ target 'swift-demo-project-pod' do
 
   # Pods for swift-demo-project-pod
   pod 'oc-pod', :path => '../oc-pod'
-
+  pod 'swift-pod', :path => '../swift-pod'
 end

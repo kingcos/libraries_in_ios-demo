@@ -7,16 +7,16 @@
 //
 
 import UIKit
+import swift_pod
 
 class ViewController: UIViewController {
-
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         
         ObjC_Foo().foo()
+        
+        Swift_Foo().foo()
+        print(Swift_Foo().strings())
     }
-
-
 }
-

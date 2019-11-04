@@ -199,6 +199,7 @@
 				"${PODS_ROOT}/Target Support Files/Pods-swift-demo-project-pod/Pods-swift-demo-project-pod-resources.sh",
 				"${PODS_ROOT}/../../oc-pod/oc-pod/Assets/info.json",
 				"${PODS_CONFIGURATION_BUILD_DIR}/oc-pod/oc-pod.bundle",
+				"${PODS_ROOT}/../../swift-pod/swift-pod/Assets/Localizable.strings",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputFileListPaths = (
@@ -206,6 +207,7 @@
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/info.json",
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/oc-pod.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Localizable.strings",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
