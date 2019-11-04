@@ -16,9 +16,11 @@ PODS:
     - AFNetworking/NSURLSession
   - oc-pod (0.1.0):
     - AFNetworking
+  - swift-pod (0.1.0)
 
 DEPENDENCIES:
   - oc-pod (from `../oc-pod`)
+  - swift-pod (from `../swift-pod`)
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
@@ -27,11 +29,14 @@ SPEC REPOS:
 EXTERNAL SOURCES:
   oc-pod:
     :path: "../oc-pod"
+  swift-pod:
+    :path: "../swift-pod"
 
 SPEC CHECKSUMS:
   AFNetworking: b6f891fdfaed196b46c7a83cf209e09697b94057
   oc-pod: a4780dbce4c62612c8a6d6f2256aa873e63f75e9
+  swift-pod: fef439b84971179829bcf417ae4902fede1ec741
 
-PODFILE CHECKSUM: bc32f1d90654430fde6cb5fdf8ce8f4b77c29248
+PODFILE CHECKSUM: c82415d57be498315876169f84689a45c90f740d
 
 COCOAPODS: 1.6.0

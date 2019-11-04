@@ -9,6 +9,8 @@
 #import "ViewController.h"
 #import <oc-pod/ObjC_Foo.h>
 
+@import swift_pod;
+
 @interface ViewController ()
 
 @end
@@ -20,6 +22,9 @@
     // Do any additional setup after loading the view.
     
     [[[ObjC_Foo alloc] init] foo];
+    
+    [[[Swift_Foo alloc] init] foo];
+    NSLog(@"%@", [[[Swift_Foo alloc] init] strings]);
 }
 
 

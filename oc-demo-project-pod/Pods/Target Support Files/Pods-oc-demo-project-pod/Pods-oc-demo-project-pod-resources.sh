@@ -99,10 +99,12 @@ EOM
 if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_resource "${PODS_ROOT}/../../oc-pod/oc-pod/Assets/info.json"
   install_resource "${PODS_CONFIGURATION_BUILD_DIR}/oc-pod/oc-pod.bundle"
+  install_resource "${PODS_ROOT}/../../swift-pod/swift-pod/Assets/Localizable.strings"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
   install_resource "${PODS_ROOT}/../../oc-pod/oc-pod/Assets/info.json"
   install_resource "${PODS_CONFIGURATION_BUILD_DIR}/oc-pod/oc-pod.bundle"
+  install_resource "${PODS_ROOT}/../../swift-pod/swift-pod/Assets/Localizable.strings"
 fi
 
 mkdir -p "${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}"
