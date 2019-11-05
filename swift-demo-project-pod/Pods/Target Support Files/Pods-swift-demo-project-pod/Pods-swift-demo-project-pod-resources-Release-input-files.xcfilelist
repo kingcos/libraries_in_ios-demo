@@ -1,0 +1,4 @@
+${PODS_ROOT}/Target Support Files/Pods-swift-demo-project-pod/Pods-swift-demo-project-pod-resources.sh
+${PODS_ROOT}/../../oc-pod/oc-pod/Assets/info.json
+${PODS_CONFIGURATION_BUILD_DIR}/oc-pod/oc-pod.bundle
+${PODS_ROOT}/../../swift-pod/swift-pod/Assets/Localizable.strings
